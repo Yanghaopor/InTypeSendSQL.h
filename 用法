@@ -1,0 +1,35 @@
+将此头导入在附加库中就可以用了
+
+定义了一个类为ICSQL::Var,
+这个类包含了：
+//类型定义
+int Int; //int类型
+double Double;//浮动类型
+bool Bool;//布尔类型
+std::wstring Wstring;//宽字符类型
+std::string String;//字符串类型
+char Char;//字符类型
+
+//指针类型，以上相对的指针
+int *Int_f;
+double *Double_f;
+bool *Bool_f;
+std::wstring *Wstring_f;
+std::string *String_f;
+char* Char_f;
+这样一个Var可以存储6种类型与6种相对的指针类型
+int main(){
+  ICSQL::Var *name = new ICSQL::Var; //这里就是创建了这个类型的变量
+}
+其中包含的函数有
+void Fpont_Self()//指针类型指向自己,这样就不需要为它而创建特殊类型的指针，即用即可
+void InitVar()//初始化，我不用解释，当然为了那点内存安全使用也是可以的
+void D_bug()//查看当前所有的值的内容与大小和每个值所对应的地址
+
+//算法优化
+void Turn_binary(int tobe,std::string *Mube)//二进制转换（转换数，存储数（*这里是字符串类型别搞错了））不包含小数,看清楚了，不包含小数的，等后面更新
+void Automatic_sorting(double A[],bool Be,int Nme)//自动排序（需要排序的数，trun正序false倒序,大小）仅支持浮动类型，如果想要int类型的可以强制转换，这也是老师最爱的排序问题
+所有为了方便用的红黑树排序的
+
+暂时就这些了，等待下一次更新吧；
+(=ලᆽල=)
